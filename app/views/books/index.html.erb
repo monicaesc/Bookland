@@ -1,19 +1,6 @@
-<h1 class= "welcome"> Welcome to Bookland!</h1>
-<h2 class= "text"> My Books</h2>
+<h2 class= "welcome"> Welcome to Bookland!</h2><div><%= image_tag "feminist-books.jpg", :size => "1200x590" %></div>
 
 <ul>
 <% @books.each do |book| %>
 <% end %>
 </ul>
-
-<p> This are my books: </p>
-<% current_user.books.each do |book| %>
-<li><b><%= link_to(book.name, "/books/#{book.id}", class: "book-link")%></b>
-
-<% end %>
-
-<h6 class= "space"> </h6>
-
-<div>
-  <%= link_to "New book", new_book_path %>
-</div>

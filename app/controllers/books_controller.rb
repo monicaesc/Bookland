@@ -38,10 +38,16 @@ class BooksController <ApplicationController
         flash[:alert] = "Not authorized to update book"
       end
 
+   def overview
+   end
+
+   def favorite
+   end
+
 end
 
     private
       def books_params
-          params.require(:book).permit(:name, :author, :year, :genre, :description)
+          params.require(:book).permit(:name, :author, :year, :genre, :description, :favorite_books)
       end
 end

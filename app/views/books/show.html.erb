@@ -1,12 +1,19 @@
-<p> This are my books </p>
+<h4 class="font"> My books </h4>
 
-    <p><%= @book.name %></p>
-    <p><%= @book.author %></p>
-    <p><%= @book.year %></p>
-    <p><%= @book.genre %></p>
-    <p><%= @book.description %></p>
+<div class="card my-card" style="width: 30rem; border-color: #D2691E">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+      <p>Name: <%= @book.name %></p>
+      <p>Author: <%= @book.author %></p>
+      <p>Year: <%= @book.year %></p>
+      <p>Genre: <%= @book.genre %></p>
+      <p>Description: <%= @book.description %></p>
+    </p>
+  </div>
+</div>
 
-<%= link_to "Back", books_path %>
+<%= link_to "Back", books_path, class:"btn btn-info" %>
 
-<span><%= link_to "Edit", "/books/#{@book.id}/edit" %></span>
+<span><%= link_to "Edit", "/books/#{@book.id}/edit", class:"btn btn-warning" %></span>
     <span>

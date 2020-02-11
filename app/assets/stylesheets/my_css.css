@@ -1,5 +1,6 @@
 .welcome{
-  color: #483D8B;
+  color: #FFA07A;
+  margin-left: 400px;;
 }
 
 .text{
@@ -13,4 +14,14 @@
 
 .space{
   margin-right: 10px;
+}
+
+.my-card{
+  border-radius: 100px;
+  border-color: blue;
+}
+
+.font{
+  font-family: 'Sriracha', cursive;
+
 }

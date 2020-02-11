@@ -1,0 +1,12 @@
+<h4 class="font"> My books </h4>
+<br>
+
+  <% current_user.books.each do |book| %>
+  <h6><li><b><%= link_to(book.name, "/books/#{book.id}", class: "book-link")%></b> </h6>
+    <% end %>
+
+    <h6 class= "space"> </h6>
+
+    <div>
+      <%= link_to "New book", new_book_path %>
+    </div>
