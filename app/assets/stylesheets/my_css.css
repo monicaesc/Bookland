@@ -1,0 +1,16 @@
+.welcome{
+  color: #483D8B;
+}
+
+.text{
+  color: #008B8B;
+}
+
+.login-container, .application-container{
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.space{
+  margin-right: 10px;
+}

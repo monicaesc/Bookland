@@ -1,0 +1,28 @@
+
+<%= form_with model: @book do |b| %>
+    <p>
+        <%= b.label :name %> <br/>
+        <%= b.text_field :name %>
+    </p>
+    <p>
+        <%= b.label :author %> <br/>
+        <%= b.text_area :author %>
+    </p>
+    <p>
+      <%= b.label :year %> <br/>
+      <%= b.text_area :year %>
+    </p>
+    <p>
+      <%= b.label :genre %> <br/>
+      <%= b.text_area :genre %>
+      </p>
+      <p>
+        <%= b.label :description %> <br/>
+        <%= b.text_area :description %>
+
+        </p>
+        <p>
+
+        <%= b.submit %>
+    </p>
+<% end %>
