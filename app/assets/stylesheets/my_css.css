@@ -19,6 +19,7 @@
 .my-card{
   border-radius: 100px;
   border-color: blue;
+  font-weight: 500;
 }
 
 .font{
@@ -27,4 +28,15 @@
 
 .btn-outline-danger {
   float: right;
+}
+
+.card-img-top{
+  size: portrait;
+  width: 50px;
+  height: 150px;
+}
+
+.my-pic{
+  width: 130px;
+  height: 130px;
 }

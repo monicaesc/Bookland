@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :books
          has_many :favorite_books
+         has_one_attached :image
 end

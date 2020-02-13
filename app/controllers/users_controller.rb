@@ -1,7 +1,7 @@
 class UsersController <ApplicationController
 
   def edit
-    
+
   end
 
   def update
@@ -19,6 +19,6 @@ class UsersController <ApplicationController
 
   private
     def users_params
-        params.require(:user).permit(:nickname, :quote, :aboutme)
+        params.require(:user).permit(:nickname, :quote, :aboutme, :image)
     end
 end
