@@ -42,6 +42,7 @@ class BooksController <ApplicationController
    end
 
    def favorite
+     @books = Book.where("favorite_books = ?",true)
    end
 
 end

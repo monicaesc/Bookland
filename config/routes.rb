@@ -3,7 +3,16 @@ Rails.application.routes.draw do
   get "/", to: "books#index"
   get "/books/overview", to: "books#overview"
   get "/books/favorite", to: "books#favorite"
-  resources :books
+  get "/books", to: "books#overview"
+  get "/users/about_me", to: "users#about_me"
+  get "/users/edit_me", to: "users#edit"
+  patch "/users/:id", to: "users#update"
+  #get "/books/mark/:book_id", to: "books#mark", as: "mark"
+  resources :books do
+    resources :favorites
+  end
+
+  # resources :books
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 

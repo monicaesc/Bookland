@@ -1,1 +1,19 @@
 <h4 class="font"> Favorite books </h4>
+
+<% current_user.books.each do |book| %>
+  <h6>
+
+
+    <% if book.favorite_books? %>
+    <li>
+      <b><%= link_to(book.name, "/books/#{book.id}", class: "book-link")%>
+      </b>
+    </li>
+    <% end %>
+
+  </h6>
+<% end %>
+
+  <h6 class= "space"> </h6>
+
+<%= link_to "Back", books_path, class:"btn btn-outline-success" %>

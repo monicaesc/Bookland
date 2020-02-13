@@ -23,5 +23,8 @@
 
 .font{
   font-family: 'Sriracha', cursive;
+}
 
+.btn-outline-danger {
+  float: right;
 }

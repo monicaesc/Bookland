@@ -1,0 +1,18 @@
+<h4 class="font"> Something about me </h4>
+
+<%= form_with model: current_user, url: "/users/#{current_user.id}", method: "patch" do |b| %>
+    <p>
+        <%= b.label :nickname %> <br/>
+        <%= b.text_field :nickname %>
+    </p>
+    <p>
+        <%= b.label :quote %> <br/>
+        <%= b.text_area :quote %>
+    </p>
+    <p>
+      <%= b.label :aboutme %> <br/>
+      <%= b.text_area :aboutme %>
+
+      <%= b.submit %>
+
+<% end %>
