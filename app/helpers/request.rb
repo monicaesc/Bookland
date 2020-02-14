@@ -16,7 +16,6 @@ class Request
     end
 
     def get_json(root_path, query_string)
-      #query_string = query.map{|k,v| "#{k}=#{v}"}.join("&")
       path =  "#{root_path}?q=#{query_string}"
       response = api.get(path)
       [JSON.parse(response.body), response.status]

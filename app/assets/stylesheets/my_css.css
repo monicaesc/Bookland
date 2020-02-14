@@ -30,13 +30,34 @@
   float: right;
 }
 
-.card-img-top{
-  size: portrait;
-  width: 50px;
-  height: 150px;
+.img-top{
+  height: 250px;
+  width: 190px;
 }
 
 .my-pic{
   width: 130px;
   height: 130px;
+}
+
+.form-container{
+  margin-top: 50px;
+  margin-left: 160px;
+  top: 30vh
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+
+}
+
+.bg{
+   background-image:url('/images/7.jpg');
+   width: 100vw;
+   height: 100vh;
+   background-size: 100%;
+ }
+
+.img-top{
+  margin-left: 110px;
 }

@@ -1,6 +1,8 @@
 <h4 class="font"> Something about me </h4>
-
-<%= image_tag @user.image, class: "my-pic"%>
+<% if @user.image.attached? %>
+  <%= image_tag @user.image, class: "my-pic"%>
+<% end %>
+<p>Name: <%= @user.name %></p>
 <p>Nickname: <%= @user.nickname %></p>
 <p>Quote: <%= @user.quote %></p>
 <p>About_me: <%= @user.aboutme %></p>
